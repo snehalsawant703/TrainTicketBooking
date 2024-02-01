@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 3.012 s <<< FAILURE! - in com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest
+com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.modifyUserSeat  Time elapsed: 0.021 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <B> but was: <A>
+	at com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.modifyUserSeat(TicketServiceTest.java:83)
+
+com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.removeUser  Time elapsed: 0.049 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+ticketsMock.remove("snehal@gmail.com");
+-> at com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.removeUser(TicketServiceTest.java:71)
+Actually, there were zero interactions with this mock.
+
+	at com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.removeUser(TicketServiceTest.java:71)
+
+com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.purchaseTicket  Time elapsed: 0.013 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.ticketbooking.ticketBooking.ServiceTest.TicketServiceTest.purchaseTicket(TicketServiceTest.java:36)
+
